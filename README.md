@@ -3,7 +3,7 @@
 Backend		
 
 	configurar .env com as seguintes chaves
-		ACCESS_KEY - Chave de acesso para a AWS (Amazon Web Services).
+		ACCESS_KEY - Chave de acesso para a AWS.
 		SECRET_ACCESS_KEY - Chave secreta correspondente à chave de acesso para a AWS.
 		AWS_REGION - Região da AWS a ser utilizada pelo aplicativo.
 		JWT_SECRET - Chave secreta para a geração e validação de tokens JWT.
