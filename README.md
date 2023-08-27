@@ -21,7 +21,7 @@ Backend
 		Uuid
 
 		
-	Utilizado nodeJs, realiza operações de Read, Write e Delete para as tabelas de usuários e pedidos, além de criptografia de senha e utilização de token de autorização.
+	Utilizado nodeJs, realiza operações de CRUD para as tabelas de usuários e pedidos, além de criptografia de senha e utilização de token de autorização.
 
 	UsuarioToken (Middleware)
 		verificarToken - Verifica se o token fornecido é válido, expirado ou inválido. Caso o token estiver expirado o frontend realiza o logout do usuário.
