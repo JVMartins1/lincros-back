@@ -25,7 +25,9 @@ class Usuario {
             Item: formData
         };
 
-        if (await this.getUsuario(formData.NM_USUARIO)) {
+        const usuario = await this.getUsuario(formData.NM_USUARIO)
+        
+        if (usuario.NM_USUARIO) {
             return 'Usuário já existe'
         } else {
             try {
@@ -80,7 +82,12 @@ class Usuario {
 
         try {
             const usuario = await this.db.get(params).promise();
-            return usuario.Item;
+            if(usuario.Item){
+                return usuario.Item
+            }
+
+            return {DS_SENHA: ''}
+            
         } catch (error) {
             console.error('Erro ao obter usuário:', error);
             throw error;
